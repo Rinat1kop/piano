@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Virtual piano</h1>
+    </header>
+
+
+    <main class="main">
+        <div class="btn-container">
+            <button class="btn btn-notes btn-active">Notes</button>
+            <button class="btn btn-letters">Letters</button>
+        </div>
+
+
+        <div class="piano">
+            <div class="piano-key" data-note="c" data-letter="D" data-letter-code="KeyD"></div>
+            <div class="piano-key" data-note="d" data-letter="F" data-letter-code="KeyF"></div>
+            <div class="piano-key" data-note="e" data-letter="G"data-letter-code="KeyG"></div>
+            <div class="piano-key" data-note="f" data-letter="H" data-letter-code="KeyH"></div>
+            <div class="piano-key" data-note="g" data-letter="J" data-letter-code="KeyJ"></div>
+            <div class="piano-key" data-note="a" data-letter="K" data-letter-code="KeyK"></div>
+            <div class="piano-key" data-note="b" data-letter="L" data-letter-code="KeyL"></div>
+
+
+            <div class="key-sharp">
+                <div class="piano-key sharp" data-note="c♯" data-letter="R" data-letter-code="KeyR"></div>
+                <div class="piano-key sharp" data-note="d♯" data-letter="T" data-letter-code="KeyT"></div>
+                <div class="piano-key sharp none" ></div>
+                <div class="piano-key sharp" data-note="f♯" data-letter="U" data-letter-code="KeyU"></div>
+                <div class="piano-key sharp" data-note="g♯" data-letter="I" data-letter-code="KeyI"></div>
+                <div class="piano-key sharp" data-note="a♯" data-letter="O" data-letter-code="KeyO"></div>
+                
+            </div>
+        </div>
+
+        <button class="fullscreen"></button>
+    </main>
+
+
+    <audio data-letter-code="KeyD" src="assets/audio/c.mp3"></audio>
+    <audio data-letter-code="KeyF" src="assets/audio/d.mp3"></audio>
+    <audio data-letter-code="KeyG" src="assets/audio/e.mp3"></audio>
+    <audio data-letter-code="KeyH" src="assets/audio/f.mp3"></audio>
+    <audio data-letter-code="KeyJ" src="assets/audio/g.mp3"></audio>
+    <audio data-letter-code="KeyK" src="assets/audio/a.mp3"></audio>
+    <audio data-letter-code="KeyL"src="assets/audio/b.mp3"></audio>
+    <audio data-letter-code="KeyR" src="assets/audio/c♯.mp3"></audio>
+    <audio data-letter-code="KeyT" src="assets/audio/d♯.mp3"></audio>
+    <audio data-letter-code="KeyU" src="assets/audio/f♯.mp3"></audio>
+    <audio data-letter-code="KeyI" src="assets/audio/g♯.mp3"></audio>
+    <audio data-letter-code="KeyO" src="assets/audio/a♯.mp3"></audio>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
